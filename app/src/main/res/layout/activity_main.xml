@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F144F"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ttt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/showX"
+            android:src="@drawable/x"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/showO"
+            android:src="@drawable/o"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/gameboard"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#00FFFFFF"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="35dp"
+                android:tag="1"
+                android:onClick="click"
+                android:id="@+id/img1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#00FFFFFF"
+                android:onClick="click"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="10dp"
+                android:tag="2"
+                android:id="@+id/img2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#00FFFFFF"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="10dp"
+                android:tag="3"
+                android:onClick="click"
+                android:id="@+id/img3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#00FFFFFF"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="35dp"
+                android:tag="4"
+                android:onClick="click"
+                android:id="@+id/img4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="click"
+                android:textColor="#00FFFFFF"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:tag="5"
+                android:id="@+id/img5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="click"
+                android:tag="6"
+                android:textColor="@color/noncolor"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/img6" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/img7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="35dp"
+                    android:tag="7"
+                    android:layout_marginRight="35dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:onClick="click"
+                    android:textColor="#00FFFFFF" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:tag="8"
+                    android:background="?attr/selectableItemBackground"
+                    android:onClick="click"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#00FFFFFF"
+                    android:id="@+id/img8" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/img9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="32dp"
+                    android:tag="9"
+                    android:background="?attr/selectableItemBackground"
+                    android:onClick="click"
+                    android:textColor="#00FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Restartbtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC30E"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Restart"
+        android:onClick="restartOnClick"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
